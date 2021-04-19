@@ -1,24 +1,28 @@
- var bottone = $('.close');
+ var bottone = $('.header-right a');
  //console.log(bottone);
  var opzioni = $('.hamburger-menu');
  //console.log(opzioni);
- 
- var visibilita = true;
+ var x = $('.close');
+ var visibilita = false;
  
  
 
   bottone.click(function(){
    
-    // Condizione per la visibilta delle opzioni. Se non sono visibili, le mostro e cambio il flag in true.
-    if(visibilita === false){
-      opzioni.show();
-      bottone.hidden();
-      visibilita = true;
-    }else{// Condizione per la visibilta delle opzioni. Se sono visibili, li nascondo e cambio il flag in false.
-      opzioni.hidden();
-      bottone.show();
-      visibilita = false;
-    }
-   
+
+
+      $('.hamburger-menu').show();
+     
+      
 
   })
+
+  
+  x.click(function(){
+    console.log("sono qui")
+    $('.hamburger-menu').hide();
+
+  })
+
+
+
